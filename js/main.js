@@ -93,7 +93,7 @@ function yellowBlocks() {
           //2.gaasuftavo matrica
           //3.gamwvanebis mere gaasuftavo da gamoidzaxo randomNumGen
           //4.sheamowme eventebi
-          randomNumGen();
+          
 
           randommedNumbersArray.forEach((value, index) => {
             blocks[value].style.backgroundColor = "yellow";
