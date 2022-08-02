@@ -84,16 +84,20 @@ function yellowBlocks() {
           countGreen++;
           if (countGreen == 3) {
             setTimeout(function () {
-              alert("you win");
-            }, 500);
+              alert("Next level!!!");
+            }, 200);
+
+            randomNumGen();
           }
         } else {
           this.style.backgroundColor = "red";
-          //1.daitvale samjer da tu udris 3 s
+          setTimeout(function () {
+            alert("you lose,play again!!!");
+          }, 200);
+
           //2.gaasuftavo matrica
           //3.gamwvanebis mere gaasuftavo da gamoidzaxo randomNumGen
           //4.sheamowme eventebi
-          
 
           randommedNumbersArray.forEach((value, index) => {
             blocks[value].style.backgroundColor = "yellow";
